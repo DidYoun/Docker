@@ -1,0 +1,9 @@
+version: '2'
+services: 
+  web:
+    container_name: tomcat-web
+    build: ./docker/tomcat
+    volumes:
+        - ./app:/usr/local/tomcat/webapps/app/
+    ports:
+        - "8181:8080"
