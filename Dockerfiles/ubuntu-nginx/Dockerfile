@@ -3,11 +3,11 @@ FROM ubuntu:14.04
 # Author
 MAINTAINER Didier Youn <didier.youn@gmail.com>
 # Create user and group
-RUN groupadd -r didier \
-    && useradd -r -g didier didier
+RUN groupadd -r www-user \
+    && useradd -r -g www-user www-user
 # Set user and group permissions
 RUN mkdir -p /data/www \ 
-    && chown -R didier:didier /data/www
+    && chown -R www-user:www-user /data/www
 # Update & install package
 RUN apt-get update \
     && apt-get install -y software-properties-common \
