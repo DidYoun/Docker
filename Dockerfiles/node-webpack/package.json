@@ -1,0 +1,42 @@
+{
+  "name": "ZendPokemonFront",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./webpack | node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --hot"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-core": "^6.23.1",
+    "babel-eslint": "^7.1.1",
+    "babel-loader": "^6.3.2",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.23.0",
+    "css-loader": "^0.26.2",
+    "eslint": "^3.17.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-loader": "^1.6.3",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.0",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "node-sass": "^4.5.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-hot-loader": "^1.3.1",
+    "sass-loader": "^6.0.2",
+    "style-loader": "^0.13.2",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "redux": "^3.6.0",
+    "webpack-dev-server": "^2.4.1"
+  }
+}

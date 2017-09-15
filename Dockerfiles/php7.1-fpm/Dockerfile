@@ -1,5 +1,5 @@
 # Base
-FROM php:7.0-fpm
+FROM php:7.1-fpm
 # Author
 MAINTAINER Didier Youn <didier.youn@gmail.com>
 # Get packages extensions

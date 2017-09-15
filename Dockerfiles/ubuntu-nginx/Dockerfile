@@ -16,13 +16,13 @@ RUN apt-get update \
     && apt-get install -y nginx \
     && rm -rf /var/lib/apt/lists/*
 # Change nginx configurations 
-# COPY ./conf/nginx.conf /etc/nginx/nginx.conf
-# COPY ./conf/default.conf /etc/nginx/conf.d/default.conf
+ADD ./conf/nginx.conf /etc/nginx/nginx.conf
+ADD ./conf/default.conf /etc/nginx/conf.d/default.conf
 # Workdir 
 ADD app/ /data/www
 ADD app/ /var/www/html
 # Delete nginx folder (unused)
-# RUN rm /etc/nginx/sites-enabled/default
+RUN rm /etc/nginx/sites-enabled/default
 # Create symlink for nginx logs
 RUN ln -sf /dev/stdout /var/log/nginx/access.log \
     && ln -sf /dev/stderr /var/log/nginx/error.log
